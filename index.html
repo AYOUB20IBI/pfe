@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Link bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
+                <img src="asset/images/logo.png" alt="" width="100%" height="100%">
+            </a>
+            <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span >
+                    <i class="bi bi-three-dots-vertical"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0" id="menu-links">
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Service Details</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Moving Planner
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Claim</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                            <li><a class="dropdown-item" href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="media" class="w-100">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center w-100 pe-4" >
+                        <li class="nav-item">
+                            <a class="px-2 py-2 ms-2" href="/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2 ">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div class="btn-get-a-quote">
+                <button class="button-navbar-get">GET A QUOTE</button>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- START SECTION HOME -->
+    <section class="home" id="home">
+            <header class="section__container header__container">
+                <div class="header__image__container d-flex justify-content-center">
+                    <div class="header__content">
+                        <h3 class="home-headline">
+                            <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Move smarter <br> with</span>
+                            <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+                                <span class="elementor-headline-dynamic-text elementor-headline-text-active">Moveto!</span>
+                            </span>
+                        </h3>
+                        <p>Convallis placerat purus massa dui malesuada felis ut lobortis leo senectus. Luctus habitant arcu justo pharetra suspendisse dis.</p>
+
+                        <div class="home-page-btn">
+                            <button>DISCOVER MORE</button>
+                        </div>
+                    </div>
+                    <div class="booking__container">
+    
+                        <form>
+                            <div>
+                                <h1>Get Your Free Moving Estimate Here</h1>
+                            </div>
+    
+                            <div>
+                                <label>Current Zip/Postal Code</label>
+                                <input type="number" placeholder="Current Zip/Postal Code">
+                            </div>
+    
+                            <div>
+                                <label>CNew Zip/Postal Code <span><i class="fa-solid fa-circle-exclamation"></i></span></label>
+                                <input type="number" placeholder="New Zip/Postal Code">
+                            </div>
+    
+                            <div class="d-flex align-items-center justify-content-center search_btn">
+                                <button class="btn-submit-home-page">
+                                    SUBMIT
+                                </button>
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
+            </header>
+    </section>
+    <!-- END SECTION HOME -->
+
+
+    <!-- START SECTION ABOUT -->
+    <!-- About 1 - Bootstrap Brain Component -->
+    <section class="py-3 py-md-5 py-xl-8" id="about">
+        <div class="container-fluid">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-6 col-xl-5 w-50" id="image-column">
+                    <img class="img-fluid rounded" loading="lazy" src="asset/images/about.jpg" alt="">
+                    <div class="rounded-section">
+                        <p><span>17 +</span> <br>years of <br> experience</p>   
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-7 w-50">
+                    <div class="row justify-content-xl-center">
+                        <div class="col-12 col-xl-11">
+                            <h5 id="sub-title-about">
+                                <div>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                </div>
+                                WHO WE ARE
+                            </h5>
+                            <h2 id="title-about" class="h1 mb-3">We Are Leader In Moving Company</h2>
+                            <p class="mb-5">
+                                Gravida accumsan turpis condimentum nulla est a dis et ultricies odio. 
+                                Suscipit convallis mattis phasellus molestie dictumst porta vitae bibendum litora. 
+                                Consectetur volutpat dolor augue pellentesque habitasse quisque maecenas.
+                            </p>
+                            <div class="row gy-4 gy-md-0 gx-xxl-5X" id="about-sectino-right">
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-4">
+                                            <span>
+                                                <i class="bi bi-globe"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                        <h4 class="mb-3">Broad Reach</h4>
+                                        <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-4 text-primary">
+                                        <span>
+                                            <i class="bi bi-truck"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                    <h4 class="mb-3">Fast, Neat and Safe</h4>
+                                    <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="about-sectino-btn">
+                                <button>MORE ABOUT US</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION ABOUT -->
+
+    <!-- START SECTION CHOOSE US -->
+    <section class="py-5 py-xl-8" id="choose-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <h5 id="sub-title-choose-us">
+                        <div>
+                            <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                            </svg>
+                            <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                            </svg>
+                        </div>
+                        WHY CHOOSE US
+                    </h5>
+                    <div class="row">
+                        <h2 class="display-5 mb-5 text-start col-lg-6 col-md-12" id="title-choose-us">Client Satisfaction Is Our Primary Focus</h2>
+                        <p class="col-lg-6 col-md-12">
+                            Montes morbi scelerisque ac laoreet accumsan metus proin ut himenaeos porta ex. 
+                            Nostra fames praesent sem metus himenaeos. Finibus iaculis rutrum semper nec consequat 
+                            tristique id. Risus sit cras a faucibus tempor luctus.
+                        </p>
+                    </div>
+                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container overflow-hidden">
+        <div class="row gy-4 gy-xl-0">
+            <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <i class="bi bi-patch-check-fill" ></i>
+                <h4 class="mb-4">Quality & Satisfaction</h4>
+                <p class="mb-4 text-secondary">
+                    In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
+                </p>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <i class="bi bi-shield-lock-fill"></i>
+                <h4 class="mb-4">Security & Reliability</h4>
+                <p class="mb-4 text-secondary">
+                    In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
+                </p>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <i class="bi bi-gear-fill"></i>
+                <h4 class="mb-4">Flexibility & <br> Advice</h4>
+                <p class="mb-4 text-secondary">
+                    In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
+                </p>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <i class="bi bi-lightbulb-fill"></i>
+                <h4 class="mb-4">Cutting-edge Solution</h4>
+                <p class="mb-4 text-secondary">
+                    In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
+                </p>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- END SECTION CHOOSE US -->
+    
+    
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
