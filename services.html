@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Link bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <script>
+        const sr = ScrollReveal ({
+            distance:'40px',
+            duration:2500,
+            reset:true
+        });
+    </script>
+    <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
+                    <img src="asset/images/logo.png" alt="" width="100%" height="100%">
+                </a>
+                <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span >
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
+                        <li class="nav-item">
+                            <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            </a>
+                            <ul class="dropdown-menu p-0 border-0">
+                                <li class="p-1"><a class="dropdown-item" href="services.html">Services</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="servicesDetails.html">Service Details</a></li>
+        
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Moving Planner
+                            </a>
+                            <ul class="dropdown-menu p-0 border-0">
+                                <li class="p-1"><a class="dropdown-item" href="#">Claim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                            </a>
+                            <ul class="dropdown-menu p-0 border-0">
+                                <li class="p-1"><a class="dropdown-item" href="#">Page 1</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="#">Page 2</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="#">Page 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="media" class="w-100">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center w-100 pe-4" >
+                            <li class="nav-item">
+                                <a class="px-2 py-2 ms-2" href="/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/" class="px-2 py-2 ms-2 ">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/" class="px-2 py-2 ms-2">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/" class="px-2 py-2 ms-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+                <div class="btn-get-a-quote">
+                    <button class="button-navbar-get">GET A QUOTE</button>
+                </div>
+            </div>
+        </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- START SECTION HEADER SERVICES -->
+    <section id="servises-section-header-our-services">
+        <div class="container-fluid page-header mb-5 p-0" >
+            <div class="container-fluid page-header-inner">
+                <div >
+                    <div class="row" id="mini-section">
+                        <div class="col-md-8">
+                            <div id="border-section">
+                                <div class="flex items-center text-start mb-4">
+                                    <span class="inline-block bg-orange-500 dark:bg-orange-400 h-1 w-10 mr-2"></span>
+                                    <h1 class="text-5xl font-bold">Our Services</h1>
+                                </div>
+                                <h2 class="text-lg">
+                                    Home
+                                    <span> / </span>
+                                    Services
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION HEADER SERVICES -->
+
+
+    <!-- START SECTION TESTIMONIALS -->
+    <section class="py-3 py-md-5 py-xl-8" id="testimontals">
+        <div class="container-fluid">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <div class="row align-items-centerr">
+                        <div class="col-12 col-lg-6">
+                            <h5 id="sub-title-testimontals">
+                                <div>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                </div>
+                                ABOUT SERVICE
+                            </h5>
+                            <h2 id="title-testimontals" class="h1 mb-3">See Us For A Great Moving Experience</h2>
+                            <p id="ptf" class="mb-5">
+                                Facilisis vivamus consequat egestas bibendum tortor pulvinar auctor aenean. 
+                                In mi id nascetur cursus nostra commodo. Ipsum etiam montes eget et gravida 
+                                nibh pulvinar ultricies hac platea cubilia. Platea malesuada torquent non 
+                                class mauris dui ad tristique suspendisse.
+                            </p>    
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div  id="image-column">
+                                <img class="img-fluid rounded" width="1280" height="835" loading="lazy" src="asset/images/card10.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        sr.reveal('#testimontals #sub-title-testimontals',{delay:200, origin:'left'})
+        sr.reveal('#testimontals #title-testimontals',{delay:200, origin:'top'})
+        sr.reveal('#testimontals #ptf',{delay:200, origin:'left'})
+        sr.reveal('#testimontals #carouselExampleIndicators',{delay:300, origin:'bottom'})
+    </script>
+    <!-- END SECTION TESTIMONIALS -->
+
+
+    <!-- START SECTION SERVICE INCLUDE -->
+    <section class="py-3 py-md-5 py-xl-8" id="service-include">
+        <div class="container-fluid">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <div class="row align-items-centerr">
+                        <div class="col-12 col-lg-4">
+                            <h5 id="sub-title-testimontals">
+                                <div>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                </div>
+                                SERVICE INCLUDE
+                            </h5>
+                            <h2 id="title-testimontals" class="h1 mb-3">Our Moving Services Include</h2>
+                            <p id="ptf" class="mb-5">
+                                Blandit laoreet ullamcorper potenti ex conubia cursus per scelerisque 
+                                si montes finibus. Libero lacus eu metus laoreet class facilisis. 
+                                Mus sodales parturient condimentum consectetur vestibulum potenti.
+                            </p>  
+                            <p id="ptf" class="mb-5">
+                                Felis lobortis molestie eu suscipit nullam potenti. 
+                                Eros bibendum fusce amet aenean venenatis magnis laoreet taciti.
+                            </p>   
+                        </div>
+                        <div class="col-12 col-lg-8" id="part2">
+                            <div class="row">
+                                <div class="card col-lg-5 col-12">
+                                    <div class="card-body">
+                                        <img src="asset/images/card12.jpg" class="card-img-top">
+                                        <h1 class="card-title" >Packing & Unpacking</h1>
+                                        <p>
+                                            Netus ut eleifend potenti litora cubilia et quam laoreet. 
+                                            Habitasse magna integer adipiscing diam congue ullamcorper dapibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card col-lg-5 col-12">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Assurance Services</h1>
+                                        <p>
+                                            Netus ut eleifend potenti litora cubilia et quam laoreet. 
+                                            Habitasse magna integer adipiscing diam congue ullamcorper dapibus.
+                                        </p>
+                                        <img src="asset/images/card11.jpg"  class="card-img-bottom">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION SERVICE INCLUDE -->
+
+
+
+
+    <!-- START SECTION SERVICE -->
+     <section class="more-service">
+        <div class="container-fluid overflow-hidden">
+            <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="row" id="sectin-img">
+                        <div class="img1">
+                            <img src="asset/images/reviews.png" alt="" >
+                        </div>
+                        <div class="col-12 col-xl-11 w-100 h-100">
+                            <img src="asset/images/mover.png" alt="" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 overflow-hidden">
+                    <h2 class="more-service-title">Professional Service Ready For Your Moving Plan</h2>
+                    <p id="pscroll" class="pb-4">
+                        Nulla nec id velit vitae rhoncus porta tellus ultrices sociosqu. 
+                        Ornare orci in consequat ad magna efficitur praesent. Tellus duis 
+                        letius pede nullam pretium dui in nec quam.
+                    </p>
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card-body">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                    <div>
+                                        <h4 >International Moves</h4>
+                                        <p class="text-secondary">
+                                            Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                        </p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Domestic Moves</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            
+                                            <i class="fa-solid fa-building"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Office Moves</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-car"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Vehicle Transfer</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-warehouse"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Secure Storage</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Junk Removal</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        sr.reveal('.more-service .more-service-title',{delay:120, origin:'right'})
+        sr.reveal('.more-service #pscroll',{delay:120, origin:'left'})
+        sr.reveal('.more-service .card',{delay:200, origin:'bottom'})
+    </script>
+    <!-- END SECTION  SERVICE  -->
+
+
+
+
+    <!-- START SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <header class="section__container_contact header__container_contact">
+            <div class="header__image__container_contact d-flex justify-content-center">
+                <div class="header__content_contact">
+                    <h3 class="contact-headline">
+                        We’ll Make This Whole Moving Thing Easy For You
+                    </h3>
+                    <h4>Get A Discount Of Up To 50% For Orders This Month!</h4>
+                    <p>
+                        Nec lectus et integer convallis potenti si suscipit neque etiam. 
+                        At ad convallis sociosqu tempus bibendum elementum si. Auctor nec 
+                        hendrerit facilisi duis tincidunt lorem lobortis tristique eu leo 
+                        donec. Mattis ac ante suspendisse mi amet.
+                    </p>
+    
+                    <div >
+                        <button class="contact-page-btn">GET A QUOTE</button>
+                        <button class="btn-contact">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <script>
+        sr.reveal('.contact .contact-headline',{delay:150, origin:'right'})
+        sr.reveal('.contact h4',{delay:150, origin:'left'})
+        sr.reveal('.contact p',{delay:190, origin:'bottom'})
+        sr.reveal('.contact .contact-page-btn',{delay:190, origin:'left'})
+        sr.reveal('.contact .btn-contact',{delay:190, origin:'right'})
+    </script>
+    <!-- END SECTION CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid py-4">
+        <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/logo.png" alt="" width="180" class="mb-3">
+                <p class="font-italic text-muted">
+                    Hendrerit neque sem volutpat ornare bibendum class euismod. 
+                    Ultricies sociosqu elit rhoncus imperdiet.
+                </p>
+            <ul class="list-inline mt-4" id="footer-media-icon">
+                <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="bi bi-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-youtube"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-services">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Services</h6>
+            <ul class="list-unstyled mb-0">
+                <li class="mb-2 px-2"><a href="#" >International Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Domestic Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Office Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Secure Storage</a></li>
+                <li class="mb-2 px-2"><a href="#" >Vehicle Transfer</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-nework">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Network</h6>
+            <ul class="list-unstyled mb-0">
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Asia</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Africa</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Europe</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">France</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Middle East</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Subscribe Newsletter</h6>
+            <p class="text-muted mb-4">Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
+            <div class="p-1 rounded border">
+                <div class="form-footer row">
+                <div  class="col-md-12 col-lg-8">
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex align-items-center mt-1">
+                    <div>
+                        <button >SIGN UP</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Copyrights -->
+    <div class="py-1 Copyrights ">
+        <div class="container-fluid  d-flex flex-wrap justify-content-between align-items-center my-4" style="font-size: 12px;    font-weight: 400;">
+            <div class="col-md-4 d-flex align-items-center">
+                <p class="mb-3 mb-md-0 ">Copyright © 2022 <span>Moveto</span>, All Rights Reserved. Powered By <span>Moxcreative</span></p>
+            </div>
+          
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="list-security">
+                <li class="ms-3 px-2"><a  href="#">Terms of Use</a></li>
+                <li class="ms-3 befour px-2"><a  href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

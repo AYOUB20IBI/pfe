@@ -1,0 +1,267 @@
+:root{
+    --color1:rgb(236, 110, 49);
+    --color2:#072C50;
+    --color3:#E8E8E8;
+}
+
+.section-header-service{
+    background-image:linear-gradient(rgb(68 68 68 / 63%),rgb(68 68 68 / 63%)), url(../images/card5.jpg);
+    /* display: flex;
+    align-items: center;
+    position: relative; */
+    padding: 8em 1em 8em 1em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-header-service #mini-section h1{
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.section-header-service #mini-section #border-section{
+    border-left: 10px solid var(--color1);
+    padding-left: 1.8rem;
+}
+
+.section-header-service #mini-section p{
+    font-weight: 400;
+    max-width: 580px;
+}
+
+
+.section-header-service #mini-section .btn-header-service{
+    background: var(--color1);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.section-header-service #mini-section .btn-header-service:hover ,.section-header-two .card .btn-form:hover ,.section-header-two .card2 .btn-card2:hover{
+    background-color: #000;
+    border:1px solid #fff;
+    color: var(--color1);
+    transition: all 0.5s;
+}
+
+
+.section-header-two .card1{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 0.5em 1em 1em 1em;
+}
+
+.section-header-two .card1 input{
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background: #fdf1ea;
+    width: 100%;
+}
+
+.section-header-two .card1 textarea{
+    border: none;
+    border-radius: 5px;
+    background: #fdf1ea;
+}
+
+.section-header-two .card1 input:focus,.section-header-two .card1 textarea:focus{
+    box-shadow: none;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.section-header-two .card1 .btn-form ,.section-header-two .card2 .btn-card2{
+    background: var(--color1);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.section-header-two .card2{
+    background-image:linear-gradient(rgb(68 68 68 / 63%),rgb(68 68 68 / 63%)), url(../images/card8.jpg);
+    padding: 5em 1em 5em 2em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.section-header-two .card2:hover{
+    background-image:url(../images/card8.jpg);
+    cursor: pointer;
+}
+
+.section-header-two .card2 .card-body h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.section-header-two #part2 #title{
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.section-header-two #part2 h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.section-header-two #part2 #mini-part2 ul{
+    list-style: none;
+    padding: 0;
+}
+
+.section-header-two #part2 #mini-part2 ul li span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.section-header-two #part2 #mini-part2 ul li i{
+    color: var(--color1);
+    width: 1.25rem;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section-header-two #part2 #mini-part2 ul li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+}
+
+.section-header-two #part2 #mini-part2 #note{
+    padding: 30px 30px 30px 30px;
+    background-color: var(--color3);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.section-header-two #part2 #mini-part2 #note span{
+    color:var(--color2);
+    font-size: 20px;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* START STYLE SERVICES.html */
+
+#servises-section-header-our-services{
+    background-image:linear-gradient(rgb(68 68 68 / 63%),rgb(68 68 68 / 63%)), url(../images/card9.jpg);
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 8em 1em 8em 1em;
+}
+
+#servises-section-header-our-services #mini-section{
+    padding-left: 1rem;
+}
+
+#servises-section-header-our-services #mini-section h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#servises-section-header-our-services #mini-section #border-section{
+    border-left: 10px solid var(--color1);
+    padding-left: 1.8rem;
+}
+
+#servises-section-header-our-services #mini-section #border-section h2 span{
+    color: var(--color1);
+}
+
+
+
+/* STYLE SECTION SERVICE INCLUDE */
+
+#service-include{
+    margin-top: 10rem;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #fff 93%, var(--color) 93%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+
+#service-include .img-fluid{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#service-include #title-testimontals{
+    color:#072c50;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+#service-include #sub-title-testimontals>div{
+    width: 50px;
+    height: 20px;
+    color: var(--color);
+    display: flex;
+
+}
+
+#service-include #sub-title-testimontals {
+    display: flex;
+    font-style: italic;
+}
+
+#service-include .maintxt{
+    font-size: 22px;
+    font-style: italic;
+}
+#service-include .rounded-circle{
+    width: 50px;
+    height: 50px;
+}
+#service-include #part2 .row{
+    gap: 30px;
+}
+
+#service-include #part2 .card{
+    border-radius: 0;
+    border-top: 6px solid var(--color2);
+}
+
+#service-include #part2 .card .card-title{
+    font-size: 28px;
+    color: var(--color2);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}

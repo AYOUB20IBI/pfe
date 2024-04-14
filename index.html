@@ -9,6 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Link bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
     <!-- START NAVBAR -->
@@ -23,25 +27,26 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0" id="menu-links">
+                <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
                     <li class="nav-item">
-                        <a class="nav-link active"  aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Service Details</a></li>
-
+                        <ul class="dropdown-menu p-0 border-0">
+                            <li class="p-1"><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="servicesDetails.html">Service Details</a></li>
+    
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Moving Planner
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Claim</a></li>
+                        <ul class="dropdown-menu p-0 border-0">
+                            <li class="p-1"><a class="dropdown-item" href="#">Claim</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -51,10 +56,10 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pages
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Page 1</a></li>
-                            <li><a class="dropdown-item" href="#">Page 2</a></li>
-                            <li><a class="dropdown-item" href="#">Page 3</a></li>
+                        <ul class="dropdown-menu p-0 border-0">
+                            <li class="p-1"><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="#">Page 2</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="#">Page 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -137,20 +142,31 @@
             </header>
     </section>
     <!-- END SECTION HOME -->
+    <script>
+        const sr = ScrollReveal ({
+            distance:'40px',
+            duration:2500,
+            reset:true
+        });
+
+        sr.reveal('.home-headline',{delay:50, origin:'bottom'})
+        sr.reveal('.header__content p',{delay:50, origin:'bottom'})
+        sr.reveal('.home-page-btn',{delay:50, origin:'bottom'})
+        sr.reveal('.booking__container',{delay:100, origin:'bottom'})
+    </script>
 
 
     <!-- START SECTION ABOUT -->
-    <!-- About 1 - Bootstrap Brain Component -->
     <section class="py-3 py-md-5 py-xl-8" id="about">
         <div class="container-fluid">
             <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6 col-xl-5 w-50" id="image-column">
+                <div class="col-12 col-lg-6 col-xl-5  " id="image-column">
                     <img class="img-fluid rounded" loading="lazy" src="asset/images/about.jpg" alt="">
                     <div class="rounded-section">
                         <p><span>17 +</span> <br>years of <br> experience</p>   
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 col-xl-7 w-50">
+                <div class="col-12 col-lg-6 col-xl-7 ">
                     <div class="row justify-content-xl-center">
                         <div class="col-12 col-xl-11">
                             <h5 id="sub-title-about">
@@ -175,7 +191,7 @@
                                     <div class="d-flex">
                                         <div class="me-4">
                                             <span>
-                                                <i class="bi bi-globe"></i>
+                                                <i class="fa-solid fa-globe"></i>
                                             </span>
                                         </div>
                                         <div>
@@ -188,7 +204,7 @@
                                 <div class="d-flex">
                                     <div class="me-4 text-primary">
                                         <span>
-                                            <i class="bi bi-truck"></i>
+                                            <i class="fa-solid fa-truck-fast"></i>
                                         </span>
                                     </div>
                                     <div>
@@ -206,8 +222,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
+    <script>
+        sr.reveal('#about .rounded-section',{delay:110, origin:'left'})
+        sr.reveal('#about .img-fluid',{delay:110, origin:'right'})
+        sr.reveal('#about-sectino-right .col-12',{delay:100, origin:'bottom'})
+        sr.reveal('.about-sectino-btn',{delay:120, origin:'bottom'})
+    </script>
     <!-- END SECTION ABOUT -->
+
 
     <!-- START SECTION CHOOSE US -->
     <section class="py-5 py-xl-8" id="choose-us">
@@ -233,18 +256,29 @@
                             tristique id. Risus sit cras a faucibus tempor luctus.
                         </p>
                     </div>
-                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
                 </div>
             </div>
         </div>
     
-        <div class="container overflow-hidden">
+        <div class="container-fluid overflow-hidden">
         <div class="row gy-4 gy-xl-0">
             <div class="col-12 col-sm-6 col-xl-3">
-            <div class="card border-0 border-bottom border-primary shadow-sm">
+            <div class="card border-0 border-bottom border-warning ">
                 <div class="card-body text-center p-4 p-xxl-5">
-                    <i class="bi bi-patch-check-fill" ></i>
-                <h4 class="mb-4">Quality & Satisfaction</h4>
+                    <i class="bi bi-patch-check-fill section-choose-us-icon" ></i>
+                    <h4 >Quality & <br> Satisfaction</h4>
+                    <p class="mb-4 text-secondary">
+                        In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
+                    </p>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-warning ">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <i class="bi bi-shield-lock-fill section-choose-us-icon"></i>
+                <h4 >Security & <br> Reliability</h4>
                 <p class="mb-4 text-secondary">
                     In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
                 </p>
@@ -253,10 +287,10 @@
             </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3">
-            <div class="card border-0 border-bottom border-primary shadow-sm">
+            <div class="card border-0 border-bottom border-warning ">
                 <div class="card-body text-center p-4 p-xxl-5">
-                    <i class="bi bi-shield-lock-fill"></i>
-                <h4 class="mb-4">Security & Reliability</h4>
+                    <i class="bi bi-gear-fill section-choose-us-icon"></i>
+                <h4 >Flexibility & <br> Advice</h4>
                 <p class="mb-4 text-secondary">
                     In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
                 </p>
@@ -265,22 +299,10 @@
             </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3">
-            <div class="card border-0 border-bottom border-primary shadow-sm">
+            <div class="card border-0 border-bottom border-warning ">
                 <div class="card-body text-center p-4 p-xxl-5">
-                    <i class="bi bi-gear-fill"></i>
-                <h4 class="mb-4">Flexibility & <br> Advice</h4>
-                <p class="mb-4 text-secondary">
-                    In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
-                </p>
-
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-3">
-            <div class="card border-0 border-bottom border-primary shadow-sm">
-                <div class="card-body text-center p-4 p-xxl-5">
-                    <i class="bi bi-lightbulb-fill"></i>
-                <h4 class="mb-4">Cutting-edge Solution</h4>
+                    <i class="bi bi-lightbulb-fill section-choose-us-icon"></i>
+                <h4 >Cutting-edge <br> Solution</h4>
                 <p class="mb-4 text-secondary">
                     In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.
                 </p>
@@ -292,6 +314,620 @@
         </div>
     </section>
     <!-- END SECTION CHOOSE US -->
+
+    <script>
+        sr.reveal('#choose-us #sub-title-choose-us',{delay:110, origin:'top'})
+        sr.reveal('#choose-us #title-choose-us',{delay:120, origin:'left'})
+        sr.reveal('#choose-us p',{delay:120, origin:'right'})
+        sr.reveal('#choose-us .card',{delay:130, origin:'right'})
+    </script>
+
+    <!-- START SECTION SERVICE -->
+    <section class="more-service mt-5">
+        <div class="container-fluid overflow-hidden">
+            <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="row" id="sectin-img">
+                        <div class="img1">
+                            <img src="asset/images/reviews.png" alt="" >
+                        </div>
+                        <div class="col-12 col-xl-11 w-100 h-100">
+                            <img src="asset/images/mover.png" alt="" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 overflow-hidden">
+                    <h2 class="more-service-title">Professional Service Ready For Your Moving Plan</h2>
+                    <p id="pscroll" class="pb-4">
+                        Nulla nec id velit vitae rhoncus porta tellus ultrices sociosqu. 
+                        Ornare orci in consequat ad magna efficitur praesent. Tellus duis 
+                        letius pede nullam pretium dui in nec quam.
+                    </p>
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card-body">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                    <div>
+                                        <h4 >International Moves</h4>
+                                        <p class="text-secondary">
+                                            Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                        </p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Domestic Moves</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            
+                                            <i class="fa-solid fa-building"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Office Moves</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-car"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Vehicle Transfer</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-warehouse"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Secure Storage</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 p-0 m-0">
+                            <div class="card border-0 ">
+                                <div class="card border-0  ">
+                                    <div class="card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </div>
+                                        <div>
+                                            <h4 >Junk Removal</h4>
+                                            <p class="text-secondary">
+                                                Condimentum cursus facilisis aliquam porttitor euismod justo ipsum arcu montes mi.
+                                            </p>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION  SERVICE  -->
+
+    <script>
+        sr.reveal('.more-service .more-service-title',{delay:120, origin:'right'})
+        sr.reveal('.more-service #pscroll',{delay:120, origin:'left'})
+        sr.reveal('.more-service .card',{delay:200, origin:'bottom'})
+    </script>
+
+    <!-- START SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <header class="section__container_contact header__container_contact">
+            <div class="header__image__container_contact d-flex justify-content-center">
+                <div class="header__content_contact">
+                    <h3 class="contact-headline">
+                        We’ll Make This Whole Moving Thing Easy For You
+                    </h3>
+                    <h4>Get A Discount Of Up To 50% For Orders This Month!</h4>
+                    <p>
+                        Nec lectus et integer convallis potenti si suscipit neque etiam. 
+                        At ad convallis sociosqu tempus bibendum elementum si. Auctor nec 
+                        hendrerit facilisi duis tincidunt lorem lobortis tristique eu leo 
+                        donec. Mattis ac ante suspendisse mi amet.
+                    </p>
+    
+                    <div >
+                        <button class="contact-page-btn">GET A QUOTE</button>
+                        <button class="btn-contact">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <script>
+        sr.reveal('.contact .contact-headline',{delay:150, origin:'right'})
+        sr.reveal('.contact h4',{delay:150, origin:'left'})
+        sr.reveal('.contact p',{delay:190, origin:'bottom'})
+        sr.reveal('.contact .contact-page-btn',{delay:190, origin:'left'})
+        sr.reveal('.contact .btn-contact',{delay:190, origin:'right'})
+    </script>
+    
+    <!-- END SECTION CONTACT -->
+
+    <!-- START SECTION OUR WORLDWIDE NETWORK -->
+        <section class="network">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-12 col-xxl-6">
+                        <h5 class="mb-4 text-center sub-title">
+                            OUR WORLDWIDE NETWORK
+                        </h5>
+                        <h2 class="mb-3 text-center title" >Cover A Large Area To All Corners Of The Country</h2>
+                        <p id="psd" class="text-secondary mb-5 text-center">
+                            Mattis cubilia mi magnis suscipit turpis tellus ipsum aenean nullam pharetra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-fluid overflow-hidden px-5">
+                <div class="row gy-5">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card border-0 ">
+                            <div class="card-body">
+                                <div>
+                                    <h4 >We Move The People That Move The World</h4>
+                                    <p class="text-secondary">
+                                        Suspendisse Mauris Ad Pulvinar Semper Sit Lacinia At Ultrices Nisl Ac.
+                                    </p>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3 btn1">
+                            <button>FIND A BRANCH</button>
+                        </div>
+                        <div class="py-3 btn2">
+                            <button>SEE ALL COUNTRY</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-9">
+                        <div>
+                            <img src="asset/images/country.png" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- END SECTION OUR WORLDWIDE NETWORK -->
+
+    <script>
+        sr.reveal('.network .sub-title',{delay:210, origin:'top'})
+        sr.reveal('.network .title',{delay:250, origin:'top'})
+        sr.reveal('.network #psd',{delay:270, origin:'top'})
+        sr.reveal('.network .card',{delay:260, origin:'left'})
+        sr.reveal('.network .btn1',{delay:300, origin:'bottom'})
+        sr.reveal('.network .btn2',{delay:300, origin:'bottom'})
+    </script>
+
+
+    <!-- START SECTION COMPANY -->
+    <section class="company">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-4">
+                    <h2 class="title">Our Companies By Number</h2>
+                </div>
+                <div class="col-8 company-counter row">
+                    <div class="col">
+                        <div class="counter">
+                            <h3>250K+</h3>
+                            <p class="count-text">Secure Storage</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <h3>38,000+</h3>
+                            <p class="count-text">Families Moved</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <h3>1,670</h3>
+                            <p class="count-text">Employees Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+                            <h3>94%</h3>
+                            <p class="count-text">Satisfied Clients</p>
+                        </div>
+                    </div>
+                </div
+            </div>
+        </div>
+    </section>
+      
+    <!-- END SECTION COMPANY -->
+    <script>
+        sr.reveal('.company .title',{delay:200, origin:'left'})
+        sr.reveal('.company .counter',{delay:300, origin:'bottom'})
+    </script>
+
+
+    
+    <!-- START SECTION TESTIMONIALS -->
+    <section class="py-3 py-md-5 py-xl-8" id="testimontals">
+        <div class="container-fluid">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <div class="row align-items-centerr">
+                        <div class="col-12 col-lg-6">
+                            <h5 id="sub-title-testimontals">
+                                <div>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                    <svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='#ec6e31' stroke='none'>
+                                        <polygon points='9.4,2 24,2 14.6,21.6 0,21.6'/>
+                                    </svg>
+                                </div>
+                                TESTIMONIALS
+                            </h5>
+                            <h2 id="title-testimontals" class="h1 mb-3">What Our Clients Say</h2>
+                            <p id="ptf" class="mb-5">
+                                Tincidunt magna condimentum nam interdum dapibus placerat id.
+                            </p>
+
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                        <div class="card">
+                                            <div class="px-2 py-2">
+                                                <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                                <div class="d-flex pt-3">
+                                                    <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                                    <div class="ml-2">
+                                                        <span class="name">George D. Coffey</span>
+                                                        <p class="para">Accountant</p>
+                                                    </div>
+                                                </div>
+                                            
+                                    
+                                            </div>
+                                        </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card">
+                                        <div class="px-2 py-2">
+                                            <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                            <div class="d-flex pt-3">
+                                                <div class="m-2"><img src="asset/images/Team-2.jpg" width="50" class="rounded-circle"></div>
+                                                <div class="ml-2">
+                                                    <span class="name">Melissa J. Talley</span>
+                                                    <p class="para">Manager</p>
+                                                </div>
+                                            </div>
+                                        
+                                
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card">
+                                        <div class="px-2 py-2">
+                                            <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                            <div class="d-flex pt-3">
+                                                <div class="m-2"><img src="asset/images/Team-6.jpg" width="50" class="rounded-circle"></div>
+                                                <div class="ml-2">
+                                                    <span class="name">Wilton Groves</span>
+                                                    <p class="para">Trader</p>
+                                                </div>
+                                            </div>
+                                        
+                                
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div  id="image-column">
+                                <img class="img-fluid rounded" loading="lazy" src="asset/images/family-are-moving-to-new-apartment.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION TESTIMONIALS -->
+
+    <script>
+        sr.reveal('#testimontals #sub-title-testimontals',{delay:200, origin:'left'})
+        sr.reveal('#testimontals #title-testimontals',{delay:200, origin:'top'})
+        sr.reveal('#testimontals #ptf',{delay:200, origin:'left'})
+        sr.reveal('#testimontals #carouselExampleIndicators',{delay:300, origin:'bottom'})
+    </script>
+
+    <!-- START SECTION NEWS OR BLOG -->
+    <section class="news">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-12 col-xxl-6">
+                    <h5 class="mb-4 text-center sub-title">
+                        FROM OUR BLOG
+                    </h5>
+                    <h2 class="mb-3 text-center title" >Latest News & Article</h2>
+                    <p id="pmn" class="text-secondary mb-5 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-4 pb-5">
+            <div class="row mt-n5">
+                <div class="col-md-6 col-lg-3 mt-5 wow fadeInUp"  data-wow-delay=".2s">
+                    <div class="blog-grid">
+                        <div class="blog-grid-img position-relative">
+                            <img alt="img" src="asset/images/card1.jpg">
+                            <p class="btn-top-section">PACKAGING</p>
+                        </div>
+                        <div class="blog-grid-text p-4">
+                            <h3 class="h5 mb-3"><a href="#!">Packing 101: A Simple Guide to Packing Your Stuff for Moving</a></h3>
+                            <p class="display-30">
+                                Molestie congue consectetur dictumst in quis. Ullamcorper iaculis donec 
+                                leo dictumst vel penatibus consectetur dapibus. Aenean ut pellentesque ornare 
+                                luctus curae primis malesuada at eros.</p>
+                            <div class="meta meta-style2">
+                                <ul>
+                                    <li><a href="#!">December 4, 2022</a></li>
+                                    <li><a href="#!"> No Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5 wow fadeInUp"  data-wow-delay=".2s">
+                    <div class="blog-grid">
+                        <div class="blog-grid-img position-relative">
+                            <img alt="img" src="asset/images/card2.jpg">
+                            <p class="btn-top-section">HOUSEHOLD MOVING
+                            </p>
+                        </div>
+                        <div class="blog-grid-text p-4">
+                            <h3 class="h5 mb-3"><a href="#!">Relocating? Four Questions to Ask Your Mover</a></h3>
+                            <p class="display-30">
+                                Molestie congue consectetur dictumst in quis. Ullamcorper iaculis donec 
+                                leo dictumst vel penatibus consectetur dapibus. Aenean ut 
+                                pellentesque ornare luctus curae primis malesuada at eros.</p>
+                            <div class="meta meta-style2">
+                                <ul>
+                                    <li><a href="#!">December 4, 2022</a></li>
+                                    <li><a href="#!"> No Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5 wow fadeInUp"  data-wow-delay=".2s">
+                    <div class="blog-grid">
+                        <div class="blog-grid-img position-relative">
+                            <img alt="img" src="asset/images/card3.jpg">
+                            <p class="btn-top-section">MOVING PROTECTION
+                            </p>
+                        </div>
+                        <div class="blog-grid-text p-4">
+                            <h3 class="h5 mb-3"><a href="#!">How to Protect Your Home from Damage During a Move</a></h3>
+                            <p class="display-30">
+                                Molestie congue consectetur dictumst in quis. Ullamcorper iaculis donec 
+                                leo dictumst vel penatibus consectetur dapibus. Aenean ut pellentesque
+                                 ornare luctus curae primis malesuada at eros.
+                            </p>
+                            <div class="meta meta-style2">
+                                <ul>
+                                    <li><a href="#!">December 4, 2022</a></li>
+                                    <li><a href="#!"> No Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5 wow fadeInUp"  data-wow-delay=".2s">
+                    <div class="blog-grid">
+                        <div class="blog-grid-img position-relative">
+                            <img alt="img" src="asset/images/card4.jpg">
+                            <p class="btn-top-section">TIPS
+                            </p>
+                        </div>
+                        <div class="blog-grid-text p-4">
+                            <h3 class="h5 mb-3"><a href="#!">5 Tips to Ensure Your Moving Day Goes Smoothly</a></h3>
+                            <p class="display-30">
+                                Molestie congue consectetur dictumst in quis. Ullamcorper iaculis 
+                                donec leo dictumst vel penatibus consectetur dapibus. Aenean ut pellentesque 
+                                ornare luctus curae primis malesuada at eros.
+                            </p>
+                            <div class="meta meta-style2">
+                                <ul>
+                                    <li><a href="#!">December 4, 2022</a></li>
+                                    <li><a href="#!"> No Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- END SECTION NEWS OR BLOG -->
+    <script>
+        sr.reveal('.news .sub-title',{delay:200, origin:'left'})
+        sr.reveal('.news .title',{delay:200, origin:'top'})
+        sr.reveal('.news #pmn',{delay:200, origin:'left'})
+        sr.reveal('.news .fadeInUp',{delay:300, origin:'top'})
+        sr.reveal('.news .btn-top-section',{delay:400, origin:'top'})
+    </script>
+
+    <!-- START SECTION MOVE -->
+    <section class="move mt-5" id="move">
+        <header class="section__container_move header__container_move">
+            <div class="header__image__container_move row">
+                
+                <div class="header__content_move col-lg-6">
+                    <h3 class="move-headline">
+                        Have A Plan To Move?
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+
+                    <div >
+                        <button class="move-page-btn">GET A QUOTE</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="asset/images/handsome.png" alt="" class="img">
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- END SECTION MOVE -->
+
+    <script>
+        sr.reveal('#move .move-headline',{delay:200, origin:'left'})
+        sr.reveal('#move .header__content_move p',{delay:200, origin:'left'})
+        sr.reveal('#move .move-page-btn',{delay:200, origin:'bottom'})
+        sr.reveal('#move .img',{delay:200, origin:'left'})
+    </script>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid py-4">
+        <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/logo.png" alt="" width="180" class="mb-3">
+                <p class="font-italic text-muted">
+                    Hendrerit neque sem volutpat ornare bibendum class euismod. 
+                    Ultricies sociosqu elit rhoncus imperdiet.
+                </p>
+            <ul class="list-inline mt-4" id="footer-media-icon">
+                <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="bi bi-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-youtube"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-services">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Services</h6>
+            <ul class="list-unstyled mb-0">
+                <li class="mb-2 px-2"><a href="#" >International Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Domestic Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Office Moves</a></li>
+                <li class="mb-2 px-2"><a href="#" >Secure Storage</a></li>
+                <li class="mb-2 px-2"><a href="#" >Vehicle Transfer</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-nework">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Network</h6>
+            <ul class="list-unstyled mb-0">
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Asia</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Africa</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Europe</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">France</a></li>
+                <li class="mb-2 px-2"><a href="#" class="text-muted">Middle East</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Subscribe Newsletter</h6>
+            <p class="text-muted mb-4">Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
+            <div class="p-1 rounded border">
+                <div class="form-footer row">
+                <div  class="col-md-12 col-lg-8">
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex align-items-center mt-1">
+                    <div>
+                        <button >SIGN UP</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Copyrights -->
+    <div class="py-1 Copyrights ">
+        <div class="container-fluid  d-flex flex-wrap justify-content-between align-items-center my-4" style="font-size: 12px;    font-weight: 400;">
+            <div class="col-md-4 d-flex align-items-center">
+                <p class="mb-3 mb-md-0 ">Copyright © 2022 <span>Moveto</span>, All Rights Reserved. Powered By <span>Moxcreative</span></p>
+            </div>
+          
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="list-security">
+                <li class="ms-3 px-2"><a  href="#">Terms of Use</a></li>
+                <li class="ms-3 befour px-2"><a  href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
     
     
     <script src="asset/js/script.js"></script>
