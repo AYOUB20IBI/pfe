@@ -1,0 +1,232 @@
+#about-claim #befor-border-image{
+    position: absolute;
+    height: 80%;
+    width: 50px;
+    background: rgb(236, 110, 49);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -17px;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+
+#about-claim{
+    padding: 5rem;
+}
+#about-claim #image-column{
+    position: relative;
+}
+
+#about-claim #image-column img{
+    position: relative;
+    z-index: 1;
+}
+#about-claim .rounded-section{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+#about-claim .rounded-section p{
+    color: #fff;
+    text-align: center;
+}
+#about-claim .rounded-section p span{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#about-claim #about-sectino-right span{
+    background: var(--color);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#about-claim .img-fluid{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+#about-claim .about-sectino-btn button{
+    background: rgb(236, 110, 49);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#about-claim .about-sectino-btn button:hover{
+    background-color: #000;
+    border:1px solid #fff;
+    color: rgb(236, 110, 49);
+    transition: all 0.5s;
+}
+
+#about-claim #title-about{
+    color:#072c50;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+#about-claim #sub-title-about>div{
+    width: 50px;
+    height: 20px;
+    color: var(--color);
+    display: flex;
+
+}
+
+#about-claim #sub-title-about {
+    display: flex;
+    font-style: italic;
+}
+
+
+
+/* STYLE SECTION SERVICE */
+
+.more-service-claim {
+    background: linear-gradient(#e8e8e8e8, #E8E8E8), url(https://kitnew.moxcreative.com/moveto/wp-content/uploads/sites/23/2022/12/boxes-in-new-home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #E8E8E8; */
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+.more-service-claim  .more-service-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color2);
+}
+
+.more-service-claim  .card{
+    background: none;
+}
+.more-service-claim  .card .card-body .card-title{
+    color: var(--color2);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.more-service-claim  .card .card-body .card-icon{
+    font-size: 25px;
+    background: var(--color);
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.more-service-claim  #sectin-img{
+    position: relative;
+}
+
+.more-service-claim  #sectin-img .img1{
+    position: absolute;
+} 
+
+.more-service-claim  #sectin-img .img1 img{
+    height: 80px;
+    object-fit: contain;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.more-service-claim .tesBefore{
+    list-style: none;
+}
+
+.more-service-claim .tesBefore .div-two{
+    padding-left: 1rem;
+}
+
+.more-service-claim .card1{
+    background: #fff;
+    border: none;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.15);
+    padding: 3em 3em 3em 3em;
+}
+
+.more-service-claim form label {
+    font-weight: 600;
+    line-height: 1.5em;
+}
+  
+.more-service-claim form input,.more-service-claim form textarea {
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: #fdf1ea;
+    width: 100%;
+}
+  
+.more-service-claim form input:focus,.more-service-claim form textarea:focus{
+    box-shadow: none;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.more-service-claim #note .card{
+    background: #fdf1ea;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.more-service-claim form .btn{
+    background: rgb(236, 110, 49);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.more-service-claim form .btn:hover{
+    background-color: #000;
+    border:1px solid #fff;
+    color: rgb(236, 110, 49);
+    transition: all 0.5s;
+}

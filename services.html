@@ -14,92 +14,92 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <script>
-        const sr = ScrollReveal ({
-            distance:'40px',
-            duration:2500,
-            reset:true
-        });
-    </script>
+  
     <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
-            <div class="container-fluid">
-                <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
-                    <img src="asset/images/logo.png" alt="" width="100%" height="100%">
-                </a>
-                <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span >
-                        <i class="bi bi-three-dots-vertical"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
-                        <li class="nav-item">
-                            <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                            </a>
-                            <ul class="dropdown-menu p-0 border-0">
+    <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
+                <img src="asset/images/logo.png" alt="" width="100%" height="100%">
+            </a>
+            <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span >
+                    <i class="bi bi-three-dots-vertical"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html"   data-mdb-toggle="dropdown" aria-expanded="false" >
+                        Services
+                        </a>
+                        <div class="dropdown-menu p-0 border-0">
+                            <ul >
                                 <li class="p-1"><a class="dropdown-item" href="services.html">Services</a></li>
                                 <li class="p-1"><a class="dropdown-item" href="servicesDetails.html">Service Details</a></li>
         
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Moving Planner
-                            </a>
-                            <ul class="dropdown-menu p-0 border-0">
-                                <li class="p-1"><a class="dropdown-item" href="#">Claim</a></li>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"  data-mdb-toggle="dropdown" aria-expanded="false">
+                        Moving Planner
+                        </a>
+                        <div class="dropdown-menu p-0 border-0">
+                            <ul >
+                                <li class="p-1"><a class="dropdown-item" href="claim.html">Claim</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Pages
-                            </a>
-                            <ul class="dropdown-menu p-0 border-0">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"  data-mdb-toggle="dropdown" aria-expanded="false">
+                        Pages
+                        </a>
+                        <div class="dropdown-menu p-0 border-0">
+                            <ul >
                                 <li class="p-1"><a class="dropdown-item" href="#">Page 1</a></li>
                                 <li class="p-1"><a class="dropdown-item" href="#">Page 2</a></li>
                                 <li class="p-1"><a class="dropdown-item" href="#">Page 3</a></li>
                             </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div id="media" class="w-100">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center w-100 pe-4" >
+                        <li class="nav-item">
+                            <a class="px-2 py-2 ms-2" href="/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2 ">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="px-2 py-2 ms-2">
+                                <i class="bi bi-instagram"></i>
+                            </a>
                         </li>
                     </ul>
-                    <div id="media" class="w-100">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center w-100 pe-4" >
-                            <li class="nav-item">
-                                <a class="px-2 py-2 ms-2" href="/">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/" class="px-2 py-2 ms-2 ">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/" class="px-2 py-2 ms-2">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/" class="px-2 py-2 ms-2">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                
                 </div>
-                <div class="btn-get-a-quote">
-                    <button class="button-navbar-get">GET A QUOTE</button>
-                </div>
+            
             </div>
-        </nav>
+            <div class="btn-get-a-quote">
+                <button class="button-navbar-get">GET A QUOTE</button>
+            </div>
+        </div>
+    </nav>
     <!-- END OF NAVBAR -->
 
     <!-- START SECTION HEADER SERVICES -->
@@ -126,11 +126,13 @@
             </div>
         </div>
     </section>
+  
     <!-- END SECTION HEADER SERVICES -->
 
 
-    <!-- START SECTION TESTIMONIALS -->
-    <section class="py-3 py-md-5 py-xl-8" id="testimontals">
+
+    <!-- START SECTION ABOUT SERVICE -->
+    <section class="py-md-5 py-xl-8" id="about-service">
         <div class="container-fluid">
             <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                 <div class="col-12 col-lg-12 col-xl-12">
@@ -147,13 +149,14 @@
                                 </div>
                                 ABOUT SERVICE
                             </h5>
-                            <h2 id="title-testimontals" class="h1 mb-3">See Us For A Great Moving Experience</h2>
+                            <h2 id="title-testimontals" class="h1 my-4">See Us For A Great Moving Experience</h2>
                             <p id="ptf" class="mb-5">
                                 Facilisis vivamus consequat egestas bibendum tortor pulvinar auctor aenean. 
                                 In mi id nascetur cursus nostra commodo. Ipsum etiam montes eget et gravida 
                                 nibh pulvinar ultricies hac platea cubilia. Platea malesuada torquent non 
                                 class mauris dui ad tristique suspendisse.
-                            </p>    
+                            </p> 
+                            <button class="btn-about-service">DISCOVER MORE</button>   
                         </div>
                         <div class="col-12 col-lg-6">
                             <div  id="image-column">
@@ -166,13 +169,8 @@
             </div>
         </div>
     </section>
-    <script>
-        sr.reveal('#testimontals #sub-title-testimontals',{delay:200, origin:'left'})
-        sr.reveal('#testimontals #title-testimontals',{delay:200, origin:'top'})
-        sr.reveal('#testimontals #ptf',{delay:200, origin:'left'})
-        sr.reveal('#testimontals #carouselExampleIndicators',{delay:300, origin:'bottom'})
-    </script>
-    <!-- END SECTION TESTIMONIALS -->
+    
+    <!-- END SECTION ABOUT SERVICE -->
 
 
     <!-- START SECTION SERVICE INCLUDE -->
@@ -206,7 +204,7 @@
                         </div>
                         <div class="col-12 col-lg-8" id="part2">
                             <div class="row">
-                                <div class="card col-lg-5 col-12">
+                                <div class="card col-lg-5 col-12" id="card1">
                                     <div class="card-body">
                                         <img src="asset/images/card12.jpg" class="card-img-top">
                                         <h1 class="card-title" >Packing & Unpacking</h1>
@@ -216,7 +214,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card col-lg-5 col-12">
+                                <div class="card col-lg-5 col-12" id="card2">
                                     <div class="card-body">
                                         <h1 class="card-title">Assurance Services</h1>
                                         <p>
@@ -233,6 +231,7 @@
             </div>
         </div>
     </section>
+    
     <!-- END SECTION SERVICE INCLUDE -->
 
 
@@ -366,11 +365,7 @@
             </div>
         </div>
     </section>
-    <script>
-        sr.reveal('.more-service .more-service-title',{delay:120, origin:'right'})
-        sr.reveal('.more-service #pscroll',{delay:120, origin:'left'})
-        sr.reveal('.more-service .card',{delay:200, origin:'bottom'})
-    </script>
+   
     <!-- END SECTION  SERVICE  -->
 
 
@@ -400,14 +395,141 @@
             </div>
         </header>
     </section>
-    <script>
-        sr.reveal('.contact .contact-headline',{delay:150, origin:'right'})
-        sr.reveal('.contact h4',{delay:150, origin:'left'})
-        sr.reveal('.contact p',{delay:190, origin:'bottom'})
-        sr.reveal('.contact .contact-page-btn',{delay:190, origin:'left'})
-        sr.reveal('.contact .btn-contact',{delay:190, origin:'right'})
-    </script>
+    
     <!-- END SECTION CONTACT -->
+
+    <!-- START SECTION OUR CLIENT REVIEWS -->
+    <section class="our-client-reviews">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-12 col-xxl-6">
+                    <h5 class="mb-4 text-center sub-title">
+                        TESTIMONIALS
+                    </h5>
+                    <h2 class="mb-3 text-center title" >Our Clients Reviews</h2>
+                    <p id="psd" class="text-secondary mb-5 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="container-fluid overflow-hidden px-5">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ">
+                            <div class="card col-12 col-lg">
+                                    <div class="px-2 py-2">
+                                        <span class="maintxt">
+                                            "Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. 
+                                            Aptent pharetra est nunc mattis donec per mi porttitor penatibus."
+                                        </span>
+                                        <div class="d-flex pt-3">
+                                            <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                            <div class="ml-2">
+                                                <span class="name">George D. Coffey</span>
+                                                <p class="para">Accountant</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>
+                            <div class="card col-12 col-lg">
+                                <div class="px-2 py-2">
+                                    <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                    <div class="d-flex pt-3">
+                                        <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                        <div class="ml-2">
+                                            <span class="name">George D. Coffey</span>
+                                            <p class="para">Accountant</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg">
+                                <div class="px-2 py-2">
+                                    <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                    <div class="d-flex pt-3">
+                                        <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                        <div class="ml-2">
+                                            <span class="name">George D. Coffey</span>
+                                            <p class="para">Accountant</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row ">
+                            <div class="card col-12 col-lg">
+                                    <div class="px-2 py-2">
+                                        <span class="maintxt">
+                                            "Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. 
+                                            Aptent pharetra est nunc mattis donec per mi porttitor penatibus."
+                                        </span>
+                                        <div class="d-flex pt-3">
+                                            <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                            <div class="ml-2">
+                                                <span class="name">George D. Coffey</span>
+                                                <p class="para">Accountant</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>
+                            <div class="card col-12 col-lg">
+                                <div class="px-2 py-2">
+                                    <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                    <div class="d-flex pt-3">
+                                        <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                        <div class="ml-2">
+                                            <span class="name">George D. Coffey</span>
+                                            <p class="para">Accountant</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg">
+                                <div class="px-2 py-2">
+                                    <span class="maintxt">"Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."</span>
+                                    <div class="d-flex pt-3">
+                                        <div class="m-2"><img src="asset/images/Team-8.jpg" width="50" class="rounded-circle"></div>
+                                        <div class="ml-2">
+                                            <span class="name">George D. Coffey</span>
+                                            <p class="para">Accountant</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SECTION OUR OUR CLIENT REVIEWS -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -478,5 +600,7 @@
             </ul>
         </div>
     </div>
+
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

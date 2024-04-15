@@ -49,7 +49,10 @@
     border: none;
 }
 
-.section-header-service #mini-section .btn-header-service:hover ,.section-header-two .card .btn-form:hover ,.section-header-two .card2 .btn-card2:hover{
+.section-header-service #mini-section .btn-header-service:hover ,
+.section-header-two .card .btn-form:hover ,
+.section-header-two .card2 .btn-card2:hover,
+#about-service .btn-about-service:hover{
     background-color: #000;
     border:1px solid #fff;
     color: var(--color1);
@@ -265,3 +268,138 @@
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
+
+
+
+
+/* 
+START STYLE SECTION ABOUT SERVICE */
+
+#about-service{
+    margin-top: 10rem;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #fff 93%, var(--color) 93%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+#about-service .img-fluid{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#about-service #title-testimontals{
+    color:#072c50;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+#about-service #sub-title-testimontals>div{
+    width: 50px;
+    height: 20px;
+    color: var(--color);
+    display: flex;
+
+}
+
+#about-service #sub-title-testimontals {
+    display: flex;
+    font-style: italic;
+    font-size: 16px;
+}
+
+#about-service .maintxt{
+    font-size: 22px;
+    font-style: italic;
+}
+#about-service .rounded-circle{
+    width: 50px;
+    height: 50px;
+}
+
+#about-service .btn-about-service{
+    background: var(--color1);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+
+
+/* STYLE SECTION OUR CLIENT REVIEWS */
+
+
+.our-client-reviews{
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.our-client-reviews .sub-title{
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+}
+.our-client-reviews .title{
+    color: var(--color2);
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.our-client-reviews #carouselExampleIndicators .carousel-item .row{
+    gap: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.our-client-reviews .carousel-item img{
+    width: 50px;
+    height: 50px;
+}
+
+.our-client-reviews .carousel-item .name{
+    color: var(--color2);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.our-client-reviews .carousel-item .para{
+    color: var(--color);
+    font-size:13px;
+    font-weight: 500;
+}
+
+.our-client-reviews  .carousel-indicators button{
+    width: 20px;
+    border-radius: 50%;
+    background: var(--color);
+}
+.our-client-reviews  .carousel-indicators{
+    margin-top: 1rem;
+    position: relative;
+}
+
+
+
+
+
+
+

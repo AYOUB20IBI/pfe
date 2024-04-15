@@ -1,0 +1,69 @@
+
+/* 
+START STYLE SECTION ABOUT */
+
+#contact-section-page{
+    background-color: transparent;
+    padding: 2rem;
+}
+
+#contact-section-page #image-column{
+    position: relative;
+}
+#contact-section-page .card{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+#contact-section-page .rounded-section{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+#contact-section-page .rounded-section p{
+    color: #fff;
+    text-align: center;
+}
+#contact-section-page .rounded-section p span{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#contact-section-page #about-sectino-right span{
+    font-size: 1.5rem;
+    color: var(--color);
+}
+
+#contact-section-page #about-sectino-right h4{
+    font-size: 20px;
+}
+
+
+
+#contact-section-page #title-about{
+    color:#072c50;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+#contact-section-page #sub-title-about>div{
+    width: 50px;
+    height: 20px;
+    color: var(--color);
+    display: flex;
+
+
+}
+
+#contact-section-page #sub-title-about {
+    display: flex;
+    font-style: italic;
+    font-size: 1rem;
+}
