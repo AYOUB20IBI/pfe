@@ -1,0 +1,222 @@
+#about-moving-planner #befor-border-image{
+    position: absolute;
+    height: 80%;
+    width: 50px;
+    background: rgb(236, 110, 49);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -17px;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+
+#about-moving-planner{
+    padding: 2rem;
+}
+#about-moving-planner #image-column{
+    position: relative;
+}
+
+#about-moving-planner #image-column img{
+    position: relative;
+    z-index: 1;
+}
+#about-moving-planner .rounded-section{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+#about-moving-planner .rounded-section p{
+    color: #fff;
+    text-align: center;
+}
+#about-moving-planner .rounded-section p span{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#about-moving-planner #about-sectino-right span{
+    background: var(--color);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#about-moving-planner .img-fluid{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+#about-moving-planner .about-sectino-btn button ,#service-include .btn-section-include{
+    background: rgb(236, 110, 49);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+#about-moving-planner .about-sectino-btn button:hover ,#service-include .btn-section-include:hover{
+    background-color: black;
+    border: 1px solid #fff;
+}
+
+#about-moving-planner .about-sectino-btn button:hover{
+    background-color: #000;
+    border:1px solid #fff;
+    color: rgb(236, 110, 49);
+    transition: all 0.5s;
+}
+
+#about-moving-planner #title-about{
+    color:#072c50;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+#about-moving-planner #sub-title-about>div{
+    width: 50px;
+    height: 20px;
+    color: var(--color);
+    display: flex;
+
+}
+
+#about-moving-planner #sub-title-about {
+    display: flex;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#about-moving-planner #progressbar-about{
+    border-left: 8px solid var(--color);
+    padding: 1rem;
+}
+
+
+
+#service-include #sub-title-testimontals span{
+    color: var(--color);
+}
+
+
+
+
+
+
+/* STYLE SECTION CONTACT */
+
+#contact-moving-planner{
+    background-image:linear-gradient(#072c50ba,#072c50ba), url(../images/card17.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center
+}
+
+
+#contact-moving-planner .contact-headline{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 4rem;
+    border-left: 9px solid var(--color);
+    padding: 1.4rem;
+}
+
+#contact-moving-planner .header__content_contact{
+    padding-left: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#contact-moving-planner .header__content_contact h4{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+#contact-moving-planner .header__content_contact p{
+    color: #fff;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#contact-moving-planner .contact-page-btn {
+    background: rgb(236, 110, 49);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#contact-moving-planner .contact-page-btn :hover {
+    background-color: #000;
+    border:1px solid #fff;
+    color: rgb(236, 110, 49);
+    transition: all 0.5s;
+}
+
+#contact-moving-planner .btn-contact{
+    background: transparent;
+    border: 1px solid #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+#contact-moving-planner .btn-contact:hover{
+    border: 1px solid var(--color);
+    color: var(--color);
+}
+

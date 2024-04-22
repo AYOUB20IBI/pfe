@@ -1,0 +1,36 @@
+.faq{
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+}
+.faq .sub-title{
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+}
+.faq .title{
+    color: var(--color2);
+    font-size: 47px;
+    font-weight: 700;
+}
+.faq .card{
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 90%;
+}
+.faq .card .card-body h4{
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+}
+.faq .card .card-body p{
+    font-size: 14px;
+
+}
+
+
+.faq button{
+    background: none;
+}
+

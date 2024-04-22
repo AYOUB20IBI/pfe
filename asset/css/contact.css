@@ -67,3 +67,87 @@ START STYLE SECTION ABOUT */
     font-style: italic;
     font-size: 1rem;
 }
+
+
+
+
+
+#contact-section-page2 .card{
+    padding: 2em 2em 2em 2em;
+}
+
+
+#contact-section-page2 form label {
+    font-weight: 600;
+    line-height: 1.5em;
+}
+  
+#contact-section-page2 form input ,#contact-section-page2 form textarea{
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: #fdf1ea;
+    width: 100%;
+}
+  
+#contact-section-page2 form input:focus ,#contact-section-page2 form textarea:focus{
+    box-shadow: none;
+    border: 1px solid #000;
+    outline: none;
+}
+  
+#contact-section-page2 form .input_border{
+    border: 1px solid #03A9F4;
+    border-radius: 5px;
+}
+
+
+
+#contact-section-page2 form .btn-section-contact{
+    background: rgb(236, 110, 49);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Heebo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+
+#contact-section-page2 #title-about{
+    font-size: 48px;
+    font-weight: 700;
+    color: #08437d;
+}
+
+#contact-section-page2 #title-social-media{
+    font-size: 20px;
+    font-weight: 700;
+    color: #08437d;
+}
+
+#contact-section-page2 ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#contact-section-page2 ul li{
+    background: #0b4b89;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+  

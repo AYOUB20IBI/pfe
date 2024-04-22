@@ -9,7 +9,7 @@
     /* display: flex;
     align-items: center;
     position: relative; */
-    padding: 8em 1em 8em 1em;
+    padding: 3em 1em 3em 1em;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,12 +173,12 @@
 /* START STYLE SERVICES.html */
 
 #servises-section-header-our-services{
-    background-image:linear-gradient(rgb(68 68 68 / 63%),rgb(68 68 68 / 63%)), url(../images/card9.jpg);
+    background-image:linear-gradient(rgb(68 68 68 / 63%),rgb(68 68 68 / 63%)), url(../images/card7.jpg);
     background-position: 0% 10%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 8em 1em 8em 1em;
+    padding: 6em 1em 6em 1em;
 }
 
 #servises-section-header-our-services #mini-section{
