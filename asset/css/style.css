@@ -278,7 +278,7 @@
 
 @media screen and (max-width:500px) {
     .booking__container {
-        bottom: 11rem;
+        bottom: -3rem;
     }
     .header__container {
         padding-bottom: 12rem;
