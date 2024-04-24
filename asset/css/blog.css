@@ -1,0 +1,88 @@
+
+.album .pagination-container {
+    padding-top: inherit;
+    border-top: 1px solid #d7dadb;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album .pagination-item {
+	list-style-type: none;
+	display: inline-block;
+	border-right: 1px solid #d7dadb;
+
+	transform: scale(1) rotate(19deg) translateX(0px) translateY(0px) skewX(-10deg) skewY(-20deg);
+}
+
+.album .pagination-item:hover,
+.album .pagination-item.is-active {
+		background-color: #ec6e31;
+		border-right: 1px solid #fff;
+
+		.pagination-link {
+			color: #fff;
+		}
+
+	}
+
+.album .pagination-item.first-number {
+  border-left: 1px solid #d7dadb;
+}
+
+.album .pagination-link {
+	padding: 1.1em 1.6em;
+	display: inline-block;
+	text-decoration: none;
+	color: #8b969c;
+
+	transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(20deg) skewY(0deg);
+}
+
+.album .pagination-item--wide {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.album .pagination-item--wide.first {
+	margin: 0 1em 0 0;
+}
+
+.album .pagination-item--wide.last {
+	margin: 0 0 0 1em;
+}
+
+.album .pagination-link--wide {
+	text-decoration: none;
+	color: #8b969c;
+	padding: 1.1em 1.6em;
+}
+
+.album .pagination-link--wide:hover {
+	color: #fa4248;
+}
+
+.album .pagination-link--wide.first:before,
+.album .pagination-link--wide.last:after {
+  font-family: 'entypo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.album .pagination-link--wide.first::before {
+	content: "\E765";
+	margin-right: 0.5em;
+}
+
+.album .pagination-link--wide.last::after {
+	content: "\E766";
+	margin-left: 0.5em;
+}

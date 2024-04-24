@@ -86,16 +86,21 @@
     color: #1061b1;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
     #logo{
         width: 34% !important;
     }
     .button-navbar-get{
-        padding-left: 15px;
+        /* padding-left: 15px;
         padding-right: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 12px;
+        font-size: 12px; */
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 9px;
     }
     .booking__container {
         bottom: 11rem;
@@ -278,10 +283,11 @@
 
 @media screen and (max-width:500px) {
     .booking__container {
-        bottom: -3rem;
+        bottom: -7rem;
     }
     .header__container {
         padding-bottom: 12rem;
+        padding-top: 9rem;
     }
     .header__content {
         padding-left: 2rem;
@@ -321,7 +327,7 @@
 START STYLE SECTION ABOUT */
 
 #about{
-    margin-top: 10rem;
+    margin-top: 15rem;
     background-color: transparent;
     background-image: linear-gradient(130deg, #fff 93%, var(--color) 93%);
     padding: 5rem;
@@ -329,6 +335,10 @@ START STYLE SECTION ABOUT */
 @media (max-width:900px){
     #about{
         margin-top: 20rem;
+        padding: 1rem;
+    }
+    .rounded-section {
+        left: 0px !important;
     }
 }
 #image-column{
@@ -602,6 +612,21 @@ START STYLE SECTION ABOUT */
 } */
 
 
+@media (max-width:900px){
+    .contact .contact-headline{
+        width: auto;
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    .contact .header__content_contact {
+        padding-left: 1rem;
+    }
+    .contact .header__content_contact p {
+        width: auto;
+    }
+    
+}
+
 
 
 /* STYLE SECTION NETWORK */
@@ -718,6 +743,22 @@ START STYLE SECTION ABOUT */
 
 .company .company-counter h3{
     font-size: 48px;
+}
+
+@media (max-width:900px){
+    .company .company-counter {
+        background-image: linear-gradient(250deg, var(--color) 70%, #FFFFFF00 92%);
+        padding-bottom: 0; 
+        padding-top: 0;
+    }
+    .company .title {
+        font-size: 30px;
+        padding: 6px;
+        position: relative;
+    }
+    .company .company-counter h3 {
+        font-size: 20px;
+    }
 }
 
 
@@ -1086,6 +1127,17 @@ START STYLE SECTION TESTIMONIALS */
     }
 }
 
+@media (max-width:900px){
+    .move-headline {
+        font-size: 30px;
+        width: auto;
+    }
+    .header__content_move p {
+        width: auto; 
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
 
 
 

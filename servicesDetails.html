@@ -18,10 +18,10 @@
 </head>
 <body>
      <!-- START NAVBAR -->
-     <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
+     <nav class="navbar navbar-expand-lg  p-0 fixed-top" style="background: #fff;">
         <div class="container-fluid">
             <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
-                <img src="asset/images/logo.png" alt="" width="100%" height="100%">
+                <img src="asset/images/WINBEST.png" alt="" width="100%" height="100%">
             </a>
             <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span >
@@ -32,6 +32,16 @@
                 <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
                     <li class="nav-item">
                         <a class="nav-link active"  aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="movingPlanner.html"  data-mdb-toggle="dropdown" aria-expanded="false">
+                        Moving Planner
+                        </a>
+                        <div class="dropdown-menu p-0 border-0">
+                            <ul >
+                                <li class="p-1"><a class="dropdown-item" href="claim.html">A Propos</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="services.html"   data-mdb-toggle="dropdown" aria-expanded="false" >
@@ -51,21 +61,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="movingPlanner.html"  data-mdb-toggle="dropdown" aria-expanded="false">
-                        Moving Planner
-                        </a>
-                        <div class="dropdown-menu p-0 border-0">
-                            <ul >
-                                <li class="p-1"><a class="dropdown-item" href="claim.html">A Propos</a></li>
-                            </ul>
-                        </div>
+                    
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                 </ul>
                 <div id="media" class="w-100">
@@ -95,7 +97,7 @@
             
             </div>
             <div class="btn-get-a-quote">
-                <button class="button-navbar-get">GET A QUOTE</button>
+                <a href="demander-un-devis.php" class="button-navbar-get text-decoration-none" >DEMANDER UN DEVIS</a>
             </div>
         </div>
     </nav>
@@ -391,75 +393,66 @@
 
 
 
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container-fluid py-4">
-          <div class="row py-4">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/logo.png" alt="" width="180" class="mb-3">
+        <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/WINBEST.png" alt="" width="180" class="mb-3">
                 <p class="font-italic text-muted">
                     Hendrerit neque sem volutpat ornare bibendum class euismod. 
                     Ultricies sociosqu elit rhoncus imperdiet.
                 </p>
-              <ul class="list-inline mt-4" id="footer-media-icon">
+            <ul class="list-inline mt-4" id="footer-media-icon">
                 <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="bi bi-twitter"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-youtube"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-whatsapp"></i></a></li>
-              </ul>
+            </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-services">
-              <h6 class=" font-weight-bold mb-4 title-link-footer">Our Services</h6>
-              <ul class="list-unstyled mb-0">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Services</h6>
+            <ul class="list-unstyled mb-0">
                 <li class="mb-2 px-2"><a href="#" >International Moves</a></li>
                 <li class="mb-2 px-2"><a href="#" >Domestic Moves</a></li>
                 <li class="mb-2 px-2"><a href="#" >Office Moves</a></li>
                 <li class="mb-2 px-2"><a href="#" >Secure Storage</a></li>
                 <li class="mb-2 px-2"><a href="#" >Vehicle Transfer</a></li>
-              </ul>
+            </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 our-nework">
-              <h6 class=" font-weight-bold mb-4 title-link-footer">Our Network</h6>
-              <ul class="list-unstyled mb-0">
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Our Network</h6>
+            <ul class="list-unstyled mb-0">
                 <li class="mb-2 px-2"><a href="#" class="text-muted">Asia</a></li>
                 <li class="mb-2 px-2"><a href="#" class="text-muted">Africa</a></li>
                 <li class="mb-2 px-2"><a href="#" class="text-muted">Europe</a></li>
                 <li class="mb-2 px-2"><a href="#" class="text-muted">France</a></li>
                 <li class="mb-2 px-2"><a href="#" class="text-muted">Middle East</a></li>
-              </ul>
+            </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-lg-0">
-              <h6 class=" font-weight-bold mb-4 title-link-footer">Subscribe Newsletter</h6>
-              <p class="text-muted mb-4">Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
-              <div class="p-1 rounded border">
-                <div class="form-footer row">
-                  <div  class="col-md-12 col-lg-8">
-                    <input type="email" placeholder="Enter your email address">
-                  </div>
-                  <div class="col-md-12 col-lg-4 d-flex align-items-center mt-1">
-                    <div>
-                        <button >SIGN UP</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Contact</h6>
+            <p class="text-muted mb-2"><span><i class="bi bi-geo-alt-fill me-2"></i></span>6ème étage N° 13, 99 Rue Pierre Parent, Casablanca 20110.</p>
+            <p class="text-muted mb-2"><span><i class="bi bi-phone-vibrate-fill me-2"></i></span>(+212) 644-271-049</p>
+            <p class="text-muted mb-2"><span><i class="bi bi-telephone-fill me-2"></i></span>(+212) 522-441-438</p>
             </div>
-          </div>
+        </div>
         </div>
     </footer>
-        <!-- Copyrights -->
-        <div class="py-1 Copyrights ">
-            <div class="container-fluid  d-flex flex-wrap justify-content-between align-items-center my-4" style="font-size: 12px;    font-weight: 400;">
-                <div class="col-md-4 d-flex align-items-center">
-                    <p class="mb-3 mb-md-0 ">Copyright © 2022 <span>Moveto</span>, All Rights Reserved. Powered By <span>Moxcreative</span></p>
-                </div>
-              
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="list-security">
-                    <li class="ms-3 px-2"><a  href="#">Terms of Use</a></li>
-                    <li class="ms-3 befour px-2"><a  href="#">Privacy Policy</a></li>
-                </ul>
+    <!-- Copyrights -->
+    <div class="py-1 Copyrights ">
+        <div class="container-fluid  d-flex flex-wrap justify-content-between align-items-center my-4" style="font-size: 12px;    font-weight: 400;">
+            <div class="col-md-4 d-flex align-items-center">
+                <p class="mb-3 mb-md-0 ">Copyright © 2022 <span>Moveto</span>, All Rights Reserved. Powered By <span>Moxcreative</span></p>
             </div>
+          
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="list-security">
+                <li class="ms-3 px-2"><a  href="#">Terms of Use</a></li>
+                <li class="ms-3 befour px-2"><a  href="#">Privacy Policy</a></li>
+            </ul>
         </div>
+    </div>
     
     <script src="asset/js/script.js"></script>
 </body>

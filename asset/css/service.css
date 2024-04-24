@@ -169,6 +169,11 @@
     font-weight: 600;
 }
 
+@media (max-width:600px){
+    #servises-section-header-our-services #mini-section h1 {
+        font-size: 20px !important;
+    }
+}
 
 /* START STYLE SERVICES.html */
 

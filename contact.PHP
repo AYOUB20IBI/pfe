@@ -57,10 +57,10 @@
 <body>
   
      <!-- START NAVBAR -->
-     <nav class="navbar navbar-expand-lg  p-0" style="background: #fff;">
+     <nav class="navbar navbar-expand-lg  p-0 fixed-top" style="background: #fff;">
         <div class="container-fluid">
             <a class="navbar-brand" id="logo" style="width: 15%;" href="#">
-                <img src="asset/images/logo.png" alt="" width="100%" height="100%">
+                <img src="asset/images/WINBEST.png" alt="" width="100%" height="100%">
             </a>
             <button style="    border-left: 1px solid #00000096;border-radius: 0;" id="btn-menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span >
@@ -71,6 +71,16 @@
                 <ul class="navbar-nav  mb-2 mb-lg-0 " id="menu-links">
                     <li class="nav-item">
                         <a class="nav-link active"  aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="movingPlanner.html"  data-mdb-toggle="dropdown" aria-expanded="false">
+                        Moving Planner
+                        </a>
+                        <div class="dropdown-menu p-0 border-0">
+                            <ul >
+                                <li class="p-1"><a class="dropdown-item" href="claim.html">A Propos</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="services.html"   data-mdb-toggle="dropdown" aria-expanded="false" >
@@ -90,21 +100,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="movingPlanner.html"  data-mdb-toggle="dropdown" aria-expanded="false">
-                        Moving Planner
-                        </a>
-                        <div class="dropdown-menu p-0 border-0">
-                            <ul >
-                                <li class="p-1"><a class="dropdown-item" href="claim.html">A Propos</a></li>
-                            </ul>
-                        </div>
+                    
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                 </ul>
                 <div id="media" class="w-100">
@@ -134,7 +136,7 @@
             
             </div>
             <div class="btn-get-a-quote">
-                <button class="button-navbar-get">GET A QUOTE</button>
+                <a href="demander-un-devis.php" class="button-navbar-get text-decoration-none" >DEMANDER UN DEVIS</a>
             </div>
         </div>
     </nav>
@@ -173,8 +175,9 @@
         <div class="container-fluid">
             <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                 <div class="col-12 col-lg-4 col-xl-4  p-0 m-0" id="image-column">
-                    <iframe class="card-img-left" style="width: 100%;height: 50vh;" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
+                    <iframe class="card-img-left" style="width: 100%;height: 50vh;" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.0044832753897!2d-7.6030620213995626!3d33.5947113827411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd64e63c35eb%3A0x6ca781e3774b992b!2s99%20Rue%20Pierre%20Parent%2C%20Casablanca%2020110!5e0!3m2!1sar!2sma!4v1713951063627!5m2!1sar!2sma" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
                 </div>
+                
                 <div class="col-12 col-lg-8 col-xl-8 card">
                     <div class="row justify-content-xl-center card-body">
                         <div class="col-12 col-xl-11 ">
@@ -197,7 +200,7 @@
                             <div class="row gy-4 gy-md-0 gx-xxl-5X" id="about-sectino-right">
                                 <div class="col-12 col-md-4">
                                     <div class="d-flex">
-                                        <div class="me-1">
+                                        <div class="me-2">
                                             <span>
                                                 <i class="fa-solid fa-location-dot"></i>
                                             </span>
@@ -205,36 +208,36 @@
                                         <div>
                                         <h4 class="mb-3">Address</h4>
                                         <p class="text-secondary mb-0">
-                                            Jln Cempaka Wangi 
-                                            <br>
-                                            No.22 Jakarta - Indonesia
+                                            6ème étage N° 13, 99 Rue Pierre Parent, Casablanca 20110.
+                                            <!-- <br>
+                                            No.22 Jakarta - Indonesia -->
                                         </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="d-flex">
-                                        <div class="me-4 text-primary">
+                                        <div class="me-2">
                                             <span>
                                                 <i class="fa-solid fa-envelope"></i>
                                             </span>
                                         </div>
-                                        <div>
+                                        <div class="w-100">
                                         <h4 class="mb-3">Email</h4>
-                                        <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="text-secondary mb-0">winbest.nettoyage.maroc@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="d-flex">
-                                        <div class="me-4 text-primary">
+                                        <div class="me-2">
                                             <span>
                                                 <i class="fa-solid fa-phone-volume"></i>
                                             </span>
                                         </div>
                                         <div>
                                         <h4 class="mb-3">Phone</h4>
-                                        <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="text-secondary mb-0">(+212) 522-441-438</p>
                                         </div>
                                     </div>
                                 </div>
@@ -432,11 +435,12 @@
     </section>
     <!-- END SECTION MOVE -->
 
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container-fluid py-4">
         <div class="row py-4">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/logo.png" alt="" width="180" class="mb-3">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="asset/images/WINBEST.png" alt="" width="180" class="mb-3">
                 <p class="font-italic text-muted">
                     Hendrerit neque sem volutpat ornare bibendum class euismod. 
                     Ultricies sociosqu elit rhoncus imperdiet.
@@ -470,20 +474,10 @@
             </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-lg-0">
-            <h6 class=" font-weight-bold mb-4 title-link-footer">Subscribe Newsletter</h6>
-            <p class="text-muted mb-4">Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
-            <div class="p-1 rounded border">
-                <div class="form-footer row">
-                <div  class="col-md-12 col-lg-8">
-                    <input type="email" placeholder="Enter your email address">
-                </div>
-                <div class="col-md-12 col-lg-4 d-flex align-items-center mt-1">
-                    <div>
-                        <button >SIGN UP</button>
-                    </div>
-                </div>
-                </div>
-            </div>
+            <h6 class=" font-weight-bold mb-4 title-link-footer">Contact</h6>
+            <p class="text-muted mb-2"><span><i class="bi bi-geo-alt-fill me-2"></i></span>6ème étage N° 13, 99 Rue Pierre Parent, Casablanca 20110.</p>
+            <p class="text-muted mb-2"><span><i class="bi bi-phone-vibrate-fill me-2"></i></span>(+212) 644-271-049</p>
+            <p class="text-muted mb-2"><span><i class="bi bi-telephone-fill me-2"></i></span>(+212) 522-441-438</p>
             </div>
         </div>
         </div>
