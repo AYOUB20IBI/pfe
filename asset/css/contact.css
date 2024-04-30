@@ -82,7 +82,7 @@ START STYLE SECTION ABOUT */
     line-height: 1.5em;
 }
   
-#contact-section-page2 form input ,#contact-section-page2 form textarea{
+#contact-section-page2 form input ,#contact-section-page2 form textarea,#contact-section-page2 form select{
     padding: 13px;
     border: none;
     border-radius: 5px;
@@ -90,7 +90,7 @@ START STYLE SECTION ABOUT */
     width: 100%;
 }
   
-#contact-section-page2 form input:focus ,#contact-section-page2 form textarea:focus{
+#contact-section-page2 form input:focus ,#contact-section-page2 form textarea:focus,#contact-section-page2 form select:focus{
     box-shadow: none;
     border: 1px solid #000;
     outline: none;
